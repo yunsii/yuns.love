@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 414 414" width="414" height="414" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="paint0_linear" x1="6.00017" y1="32.9999" x2="235" y2="344" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1, 0, 0, 1, 2, 10)">
+      <stop stop-color="#41D1FF"/>
+      <stop offset="1" stop-color="#BD34FE"/>
+    </linearGradient>
+  </defs>
+  <g transform="matrix(0.4, 0, 0, 0.4, 115.543138, 107.366312)">
+    <path d="M 401.641 69.525 L 217.643 398.545 C 213.844 405.338 204.084 405.378 200.228 398.618 L 12.582 69.556 C 8.381 62.19 14.68 53.267 23.028 54.759 L 207.223 87.682 C 208.398 87.892 209.601 87.89 210.776 87.676 L 391.119 54.806 C 399.439 53.289 405.768 62.143 401.641 69.525 Z" fill="url(#paint0_linear)"/>
+    <g stroke=" #61dafb" stroke-width="10" fill="none" transform="matrix(1, 0, 0, 1, 209.600998, 109)">
+      <ellipse rx="110" ry="42"/>
+      <ellipse rx="110" ry="42" transform="rotate(60)"/>
+      <ellipse rx="110" ry="42" transform="rotate(120)"/>
+    </g>
+  </g>
+</svg>
