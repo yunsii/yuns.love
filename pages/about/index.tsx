@@ -16,12 +16,9 @@ export const getStaticProps: GetStaticProps<{
   return { props: { authorDetails: { mdxSource, frontMatter } } } as any
 }
 
-export default function About({
-  authorDetails,
-}: InferGetStaticPropsType<typeof getStaticProps>) {
+export default function About({ authorDetails }: InferGetStaticPropsType<typeof getStaticProps>) {
   const { mdxSource, frontMatter } = authorDetails
 
-  console.log('styles', styles)
   return (
     <div className={styles.about}>
       <MDXLayoutRenderer

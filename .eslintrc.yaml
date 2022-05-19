@@ -65,12 +65,6 @@ rules:
           [builtin, external, internal, parent, sibling, index, object, type],
         newlines-between: always,
         warnOnUnassignedImports: true,
-        alphabetize: {
-            # sort in ascending order. Options: ['ignore', 'asc', 'desc']
-            order: asc,
-            # ignore case. Options: [true, false]
-            caseInsensitive: false,
-          },
       },
     ]
   '@typescript-eslint/no-this-alias': [

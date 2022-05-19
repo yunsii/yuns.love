@@ -26,11 +26,7 @@ export interface SocialIconProps {
 }
 
 const SocialIcon = ({ kind, href, size = 2 }: SocialIconProps) => {
-  if (
-    !href ||
-    (kind === 'mail' &&
-      !/^mailto:\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/.test(href))
-  )
+  if (!href || (kind === 'mail' && !/^mailto:\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/.test(href)))
     return null
 
   const SocialSvg = components[kind] as React.ComponentType<

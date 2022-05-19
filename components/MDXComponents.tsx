@@ -9,10 +9,7 @@ import TOCInline from './TOCInline'
 
 import type { ComponentMap } from 'mdx-bundler/client'
 
-const Wrapper: React.ComponentType<{ layout: string }> = ({
-  layout,
-  ...rest
-}) => {
+const Wrapper: React.ComponentType<{ layout: string }> = ({ layout, ...rest }) => {
   const Layout = require(`../layouts/${layout}`).default
   return <Layout {...rest} />
 }

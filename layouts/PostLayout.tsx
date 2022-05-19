@@ -12,8 +12,7 @@ import type { ReactNode } from 'react'
 import type { AuthorFrontMatter } from 'types/AuthorFrontMatter'
 import type { PostFrontMatter } from 'types/PostFrontMatter'
 
-const editUrl = (fileName) =>
-  `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
+const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
 const discussUrl = (slug) =>
   `https://mobile.twitter.com/search?q=${encodeURIComponent(
     `${siteMetadata.siteUrl}/blog/${slug}`,
@@ -34,13 +33,7 @@ interface Props {
   children: ReactNode
 }
 
-export default function PostLayout({
-  frontMatter,
-  authorDetails,
-  next,
-  prev,
-  children,
-}: Props) {
+export default function PostLayout({ frontMatter, authorDetails, next, prev, children }: Props) {
   const { slug, fileName, date, title, tags } = frontMatter
 
   return (
@@ -60,10 +53,7 @@ export default function PostLayout({
                   <dt className='sr-only'>Published on</dt>
                   <dd className='text-base font-medium leading-6 text-gray-500 dark:text-gray-400'>
                     <time dateTime={date}>
-                      {new Date(date).toLocaleDateString(
-                        siteMetadata.locale,
-                        postDateTemplate,
-                      )}
+                      {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
                     </time>
                   </dd>
                 </div>
@@ -82,10 +72,7 @@ export default function PostLayout({
               <dd>
                 <ul className='flex justify-center space-x-8 sm:space-x-12 xl:block xl:space-x-0 xl:space-y-8'>
                   {authorDetails.map((author) => (
-                    <li
-                      className='flex items-center space-x-2'
-                      key={author.name}
-                    >
+                    <li className='flex items-center space-x-2' key={author.name}>
                       {author.avatar && (
                         <Image
                           src={author.avatar}
@@ -97,9 +84,7 @@ export default function PostLayout({
                       )}
                       <dl className='whitespace-nowrap text-sm font-medium leading-5'>
                         <dt className='sr-only'>Name</dt>
-                        <dd className='text-gray-900 dark:text-gray-100'>
-                          {author.name}
-                        </dd>
+                        <dd className='text-gray-900 dark:text-gray-100'>{author.name}</dd>
                         <dt className='sr-only'>Twitter</dt>
                         <dd>
                           {author.twitter && (
@@ -107,10 +92,7 @@ export default function PostLayout({
                               href={author.twitter}
                               className='text-primary-500 hover:text-primary-600 dark:hover:text-primary-400'
                             >
-                              {author.twitter.replace(
-                                'https://twitter.com/',
-                                '@',
-                              )}
+                              {author.twitter.replace('https://twitter.com/', '@')}
                             </Link>
                           )}
                         </dd>
@@ -121,9 +103,7 @@ export default function PostLayout({
               </dd>
             </dl>
             <div className='divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0'>
-              <div className='prose max-w-none pt-10 pb-8 dark:prose-dark'>
-                {children}
-              </div>
+              <div className='prose max-w-none pt-10 pb-8 dark:prose-dark'>{children}</div>
               <div className='pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300'>
                 <Link href={discussUrl(slug)} rel='nofollow'>
                   {'Discuss on Twitter'}

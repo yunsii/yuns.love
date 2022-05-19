@@ -3,12 +3,7 @@ import fs from 'fs'
 import { MDXLayoutRenderer } from '@/components/MDXComponents'
 import PageTitle from '@/components/PageTitle'
 import generateRss from '@/lib/generate-rss'
-import {
-  formatSlug,
-  getAllFilesFrontMatter,
-  getFileBySlug,
-  getFiles,
-} from '@/lib/mdx'
+import { formatSlug, getAllFilesFrontMatter, getFileBySlug, getFiles } from '@/lib/mdx'
 
 import type { GetStaticProps, InferGetStaticPropsType } from 'next'
 import type { AuthorFrontMatter } from 'types/AuthorFrontMatter'

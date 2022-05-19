@@ -7,6 +7,7 @@ endOfLine: lf
 jsxSingleQuote: true
 semi: false
 useTabs: false
+printWidth: 100
 overrides:
   - files: '*.svg'
     options: { parser: 'xml' }

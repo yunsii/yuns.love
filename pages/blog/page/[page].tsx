@@ -5,11 +5,7 @@ import { getAllFilesFrontMatter } from '@/lib/mdx'
 
 import { POSTS_PER_PAGE } from '../../blog'
 
-import type {
-  GetStaticPaths,
-  GetStaticProps,
-  InferGetStaticPropsType,
-} from 'next'
+import type { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next'
 import type { PostFrontMatter } from 'types/PostFrontMatter'
 
 export const getStaticPaths: GetStaticPaths<{ page: string }> = async () => {
@@ -60,10 +56,7 @@ export default function PostPage({
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <>
-      <PageSEO
-        title={siteMetadata.title}
-        description={siteMetadata.description}
-      />
+      <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
       <ListLayout
         posts={posts}
         initialDisplayPosts={initialDisplayPosts}
