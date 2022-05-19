@@ -33,6 +33,7 @@ specifiers:
   github-slugger: ^1.3.0
   globby: 11.0.3
   gray-matter: ^4.0.2
+  heti: ^0.9.2
   husky: ^6.0.0
   image-size: 1.0.0
   inquirer: ^8.1.1
@@ -78,6 +79,7 @@ dependencies:
   esbuild: registry.npmmirror.com/esbuild/0.13.15
   github-slugger: registry.npmmirror.com/github-slugger/1.4.0
   gray-matter: registry.npmmirror.com/gray-matter/4.0.3
+  heti: registry.npmmirror.com/heti/0.9.2
   image-size: registry.npmmirror.com/image-size/1.0.0
   mdx-bundler: registry.npmmirror.com/mdx-bundler/8.0.1_esbuild@0.13.15
   next: registry.npmmirror.com/next/12.1.1_react-dom@17.0.2+react@17.0.2
@@ -6396,6 +6398,20 @@ packages:
       hast-util-parse-selector: registry.npmmirror.com/hast-util-parse-selector/3.1.0
       property-information: registry.npmmirror.com/property-information/6.1.1
       space-separated-tokens: registry.npmmirror.com/space-separated-tokens/2.0.1
+    dev: false
+
+  registry.npmmirror.com/heti-findandreplacedomtext/0.5.0:
+    resolution: {integrity: sha512-GFZjqU8LAdu1uR72GqrReI+lzNLMlcWtvdz1TKNJiofyo1mfTecFYSZEoEbcLcRMl+KwEldnNQoS4BwO8wtg0A==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/heti-findandreplacedomtext/-/heti-findandreplacedomtext-0.5.0.tgz}
+    name: heti-findandreplacedomtext
+    version: 0.5.0
+    dev: false
+
+  registry.npmmirror.com/heti/0.9.2:
+    resolution: {integrity: sha512-dgJqK/O3qRf4o9ZTL3bE2+7/cLYVNUoDahXYHQkV4opG8q3GwO7f5pkO9f2Yq6/rT0heiEibOps3DMqfad+sVw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/heti/-/heti-0.9.2.tgz}
+    name: heti
+    version: 0.9.2
+    dependencies:
+      heti-findandreplacedomtext: registry.npmmirror.com/heti-findandreplacedomtext/0.5.0
     dev: false
 
   registry.npmmirror.com/hosted-git-info/2.8.9:

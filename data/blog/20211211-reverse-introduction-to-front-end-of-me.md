@@ -4,10 +4,10 @@ date: '2021-12-11 19:19:52'
 tags: [随笔]
 draft: false
 summary: 当初就是喜欢玩电脑游戏才选的计算机专业，临近毕业了也是一脸茫然，随大流的跟着同学开始学起Java来，结果课程还没学完就在秋招面上了一个，心里想着有个工作就够了，大不了先就业再择业，于是乎就放飞自我了。
-layout: PostSimple
+layout: HetiLayout
 ---
 
-> 首发于[掘金](https://juejin.cn/post/7040402922085023780)
+<small>注：首发于[掘金](https://juejin.cn/post/7040402922085023780)</small>
 
 ![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/993c374d357741fe93d649b596bbf2bf~tplv-k3u1fbpfcp-watermark.image?)
 
