@@ -1,3 +1,3 @@
 **[yuns.love](https://yuns.love)**
 
-my personal website
+Yuns's blog
